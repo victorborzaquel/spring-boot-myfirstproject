@@ -25,13 +25,13 @@ public class MyfirstprojectApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        Category cat1 = new Category(1L, "Electronics");
-        Category cat2 = new Category(2L, "Books");
+        Category cat1 = new Category(null, "Electronics");
+        Category cat2 = new Category(null, "Books");
 
-        Product p1 = new Product(1L, "The Lord of the Rings", 90.5, cat2);
-        Product p2 = new Product(2L, "Smart TV", 2190.0, cat1);
-        Product p3 = new Product(3L, "Macbook Pro", 1250.0, cat1);
-        Product p4 = new Product(4L, "PC Gamer", 1200.0, cat2);
+        Product p1 = new Product(null, "The Lord of the Rings", 90.5, cat2);
+        Product p2 = new Product(null, "Smart TV", 2190.0, cat1);
+        Product p3 = new Product(null, "Macbook Pro", 1250.0, cat1);
+        Product p4 = new Product(null, "PC Gamer", 1200.0, cat2);
 
         cat1.getProducts().addAll(Arrays.asList(p2, p3));
         cat2.getProducts().addAll(Arrays.asList(p1, p4));
